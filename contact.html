@@ -136,12 +136,7 @@
                     <p>Tell me about your project and I'll provide an honest assessment of what you need. No pressure, no obligation—just straight talk from someone who's been doing this for 26 years.</p>
                 </div>
 
-                <form class="quote-form fade-in-up" data-validate action="https://api.web3forms.com/submit" method="POST">
-                    <!-- Web3Forms Access Key - Get yours at https://web3forms.com -->
-                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-                    <input type="hidden" name="subject" value="New Quote Request - CW Custom Works">
-                    <input type="hidden" name="from_name" value="CW Custom Works Website">
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <form class="quote-form fade-in-up" id="contact-form">
 
                     <div class="form-grid">
                         <div class="form-group">
@@ -193,8 +188,8 @@
                     </div>
 
                     <div class="form-group full-width">
-                        <label for="details">Tell me about your project *</label>
-                        <textarea id="details" name="details" rows="6" required placeholder="Example: I have 3 windows with failed seals that are fogging up. They're in the living room and about 36x48 inches each. Looking to get them replaced within the next month."></textarea>
+                        <label for="projectDetails">Tell me about your project *</label>
+                        <textarea id="projectDetails" name="projectDetails" rows="6" required placeholder="Example: I have 3 windows with failed seals that are fogging up. They're in the living room and about 36x48 inches each. Looking to get them replaced within the next month."></textarea>
                         <p class="form-help">The more details you provide, the more accurate my estimate will be. Feel free to mention any concerns or questions you have.</p>
                     </div>
 

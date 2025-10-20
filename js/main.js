@@ -254,19 +254,27 @@
     }
 
     async function submitForm(form) {
-        // Replace this with your actual form submission logic
-        // Example: sending to a serverless function, FormSpree, Web3Forms, etc.
-
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
-        // Example: Log to console (replace with actual submission)
-        console.log('Form data:', data);
+        // Determine endpoint based on form ID
+        const isNewsletter = form.classList.contains('newsletter-form');
+        const endpoint = isNewsletter ? '/api/newsletter' : '/api/contact';
 
-        // Simulate network request
-        return new Promise((resolve) => {
-            setTimeout(resolve, 1000);
+        const response = await fetch(endpoint, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
         });
+
+        if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.message || 'Form submission failed');
+        }
+
+        return await response.json();
     }
 
     // ========================================
