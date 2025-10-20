@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert window, door, and glass installation in Boise, Idaho. 3rd generation glazier with 70+ years of family expertise. 24/7 emergency service, lifetime warranties. Pella certified.">
+    <meta name="keywords" content="window replacement Boise, glass repair Boise Idaho, custom shower doors, Pella windows, emergency glass repair, glazier Boise, door installation Idaho">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.cwcustomworks.com/">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CW Custom Works Glass & Door - Expert Window & Glass Installation in Boise, Idaho">
+    <meta property="og:description" content="3rd generation glazier serving Boise with expert window, door, and glass installation. 24/7 emergency service, lifetime warranties.">
+    <meta property="og:image" content="https://www.cwcustomworks.com/images/cw-custom-works-logo.jpg">
+    <meta property="og:url" content="https://www.cwcustomworks.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CW Custom Works Glass & Door - Boise, Idaho">
+    <meta name="twitter:description" content="3rd generation glazier. Expert window, door, and glass installation. 24/7 emergency service.">
+    <meta name="twitter:image" content="https://www.cwcustomworks.com/images/cw-custom-works-logo.jpg">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US-ID">
+    <meta name="geo.placename" content="Boise, Idaho">
+    <meta name="geo.position" content="43.6150;-116.2023">
+
+    <title>CW Custom Works Glass & Door | Expert Window & Glass Installation Boise, Idaho</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Plausible Analytics -->
+    <script defer data-domain="cwcustomworks.com" src="https://plausible.io/js/script.js"></script>
+
+    <!-- Structured Data - LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "CW Custom Works Glass & Door LLC",
+      "image": "https://www.cwcustomworks.com/images/cw-custom-works-logo.jpg",
+      "description": "Expert window, door, and glass installation in Boise, Idaho. 3rd generation glazier with 70+ years of family expertise.",
+      "telephone": "(208) 949-7019",
+      "email": "colew@cwcustomworks.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Boise",
+        "addressRegion": "ID",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "43.6150",
+        "longitude": "-116.2023"
+      },
+      "areaServed": ["Boise", "Idaho City", "Meridian", "Eagle", "Nampa", "Caldwell", "Cascade", "Hidden Springs"],
+      "priceRange": "$$",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "foundingDate": "2022",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "16"
+      }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you offer 24/7 emergency glass repair?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We offer 24-hour emergency service for broken windows and glass. When your home's comfort is compromised, we're here to help - day or night."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes a glazier different from a handyman?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A glazier is a trained craftsman who specializes in glass and window installation. As a 3rd generation glazier with union training, I follow manufacturer standards and building codes that protect your home from water damage and ensure your warranties remain valid."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What warranties do you offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer lifetime warranties on frames and hardware, and 20-year warranties on glass. Our Pella products come with comprehensive manufacturer warranties, and our proper installation ensures those warranties remain valid."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader">
+            <div class="window-icon">
+                <div class="window-cross"></div>
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Emergency Service Banner -->
+    <div id="emergency-banner" class="emergency-banner">
+        <div class="container">
+            <div class="emergency-content">
+                <span class="emergency-icon">🚨</span>
+                <span class="emergency-text">24/7 Emergency Glass Repair Available</span>
+                <a href="tel:+12089497019" class="emergency-call plausible-event-name=Emergency+Call">Call Now: (208) 949-7019</a>
+            </div>
+            <button id="close-banner" class="close-banner" aria-label="Close banner">&times;</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="images/cw-custom-works-logo.png" alt="CW Custom Works Glass & Door Logo" width="180" height="60">
+                </a>
+
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tel:+12089497019" class="nav-phone plausible-event-name=Header+Call">(208) 949-7019</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">Get Free Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <!-- Placeholder for hero image -->
+            <div class="hero-image-placeholder" style="background: linear-gradient(135deg, rgba(41, 98, 255, 0.9) 0%, rgba(0, 48, 135, 0.95) 100%), url('images/hero-window-installation.jpg') center/cover;">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <div class="hero-badge">
+                    <span class="badge-icon">✓</span>
+                    <span>3rd Generation Glazier • 70+ Years of Family Expertise</span>
+                </div>
+
+                <h1 class="hero-title">Your Home Deserves Windows That Actually Protect It</h1>
+
+                <p class="hero-subtitle">
+                    Not all window installations are created equal. Improper installation can lead to $50,000+ in water damage down the road.
+                    We've seen it happen in hundreds of Boise homes. Let us do it right the first time.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="contact.html" class="btn btn-primary btn-lg plausible-event-name=Hero+Get+Quote">Get Free Quote</a>
+                    <a href="tel:+12089497019" class="btn btn-secondary btn-lg plausible-event-name=Hero+Call">
+                        <span class="phone-icon">📞</span>
+                        Call (208) 949-7019
+                    </a>
+                </div>
+
+                <div class="hero-trust-badges">
+                    <div class="trust-badge">
+                        <div class="trust-icon">⭐</div>
+                        <div class="trust-text">
+                            <strong>5.0 Stars</strong>
+                            <span>16 Reviews</span>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="trust-icon">🛡️</div>
+                        <div class="trust-text">
+                            <strong>Lifetime Warranty</strong>
+                            <span>On Frames & Hardware</span>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="trust-icon">🏆</div>
+                        <div class="trust-text">
+                            <strong>Pella Certified</strong>
+                            <span>US-Made Products</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <span>Scroll to learn more</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="problem-solution section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2 class="section-title">Why Idaho Homeowners Are Getting Burned by Bad Window Installations</h2>
+                <p class="section-subtitle">And how to avoid becoming another statistic</p>
+            </div>
+
+            <div class="two-column-grid">
+                <div class="problem-card fade-in-left">
+                    <div class="problem-image-placeholder">
+                        <!-- Placeholder for water damage image -->
+                        <img src="images/water-damage-example.jpg" alt="Window water damage example" loading="lazy">
+                    </div>
+                    <h3>The Problem: Deregulation Means Anyone Can Install Windows</h3>
+                    <p>Since Idaho became a right-to-work state, anyone with an LLC can legally install windows in your home. No training required. No certification needed. No union apprenticeship.</p>
+                    <p>I've personally seen over a dozen homes in Hidden Springs alone with catastrophic water damage—rotted walls, black mold, destroyed framing—all because windows weren't flashed properly.</p>
+                    <p>The builder saved a few bucks. The homeowner? Facing $50,000+ in repairs a decade later.</p>
+                </div>
+
+                <div class="solution-card fade-in-right">
+                    <div class="solution-image-placeholder">
+                        <!-- Placeholder for proper installation image -->
+                        <img src="images/proper-window-installation.jpg" alt="Proper window installation technique" loading="lazy">
+                    </div>
+                    <h3>The Solution: Hire a Trained Glazier Who Knows the Craft</h3>
+                    <p>I'm Cole Watson, a 3rd generation glazier. I grew up on job sites with my father and grandfather—both union-trained journeymen who learned the craft when standards actually mattered.</p>
+                    <p>I installed my first window at 14. At 40, I've got 26 years of hands-on experience. I'm Pella certified, lead paint certified, and I follow manufacturer installation standards that most contractors don't even know exist.</p>
+                    <p>When I install your windows, you get lifetime warranties that actually hold up—because I install them the right way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview section section-gray">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2 class="section-title">Expert Glass & Window Solutions for Your Boise Home</h2>
+                <p class="section-subtitle">From broken glass to complete window replacement, we handle it all with precision and care</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-in-up" data-delay="0">
+                    <div class="service-icon">🪟</div>
+                    <div class="service-image-placeholder">
+                        <img src="images/failed-glass-unit.jpg" alt="Failed window glass unit repair" loading="lazy">
+                    </div>
+                    <h3>Failed Glass Unit Replacement</h3>
+                    <p>Is your window fogging up or covered in condensation between the panes? That's a failed seal. We replace just the glass unit—saving you thousands over full window replacement.</p>
+                    <a href="services.html#glass-replacement" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card fade-in-up" data-delay="100">
+                    <div class="service-icon">🏠</div>
+                    <div class="service-image-placeholder">
+                        <img src="images/pella-window-installation.jpg" alt="Pella window installation" loading="lazy">
+                    </div>
+                    <h3>Window Replacement</h3>
+                    <p>Upgrade to energy-efficient Pella windows installed the right way. Proper flashing, proper sealing, proper warranties. Your home's efficiency and curb appeal transformed.</p>
+                    <a href="services.html#window-replacement" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card fade-in-up" data-delay="200">
+                    <div class="service-icon">🚿</div>
+                    <div class="service-image-placeholder">
+                        <img src="images/custom-shower-door.jpg" alt="Custom frameless shower door" loading="lazy">
+                    </div>
+                    <h3>Custom Shower Doors</h3>
+                    <p>Frameless glass shower enclosures that transform your bathroom. Clean lines, stunning aesthetics, and that open-concept feel you've been dreaming about.</p>
+                    <a href="services.html#shower-doors" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card fade-in-up" data-delay="300">
+                    <div class="service-icon">🚨</div>
+                    <div class="service-image-placeholder">
+                        <img src="images/emergency-glass-repair.jpg" alt="Emergency glass repair service" loading="lazy">
+                    </div>
+                    <h3>24/7 Emergency Service</h3>
+                    <p>Broken window at 2 AM? Idaho winters don't wait. We offer 24-hour emergency glass repair to get your home sealed up and comfortable again—fast.</p>
+                    <a href="contact.html" class="service-link">Get Emergency Help →</a>
+                </div>
+
+                <div class="service-card fade-in-up" data-delay="400">
+                    <div class="service-icon">🚪</div>
+                    <div class="service-image-placeholder">
+                        <img src="images/patio-door-installation.jpg" alt="Patio door installation" loading="lazy">
+                    </div>
+                    <h3>Patio & Storm Doors</h3>
+                    <p>Let natural light flood your home with new patio doors. We also install storm doors with screens and even dog doors for your furry loved ones.</p>
+                    <a href="services.html#doors" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card fade-in-up" data-delay="500">
+                    <div class="service-icon">✨</div>
+                    <div class="service-image-placeholder">
+                        <img src="images/custom-glass-work.jpg" alt="Custom glass fabrication" loading="lazy">
+                    </div>
+                    <h3>Custom Glass Work</h3>
+                    <p>If you can imagine it in glass, we can probably make it happen. Custom tinted glass, specialty sizes, unique applications—just ask.</p>
+                    <a href="services.html#custom" class="service-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="text-center section-cta">
+                <a href="services.html" class="btn btn-primary btn-lg">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2 class="section-title">Why Boise Homeowners Trust CW Custom Works</h2>
+                <p class="section-subtitle">70 years of generational knowledge meets modern craftsmanship</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card fade-in-up" data-delay="0">
+                    <div class="why-number">1</div>
+                    <h3>3rd Generation Glazier</h3>
+                    <p>I learned this craft from union-trained journeymen—my grandfather and father. That level of training doesn't exist anymore. You're getting 70+ years of combined family expertise on every job.</p>
+                </div>
+
+                <div class="why-card fade-in-up" data-delay="100">
+                    <div class="why-number">2</div>
+                    <h3>Proper Installation Standards</h3>
+                    <p>I follow manufacturer specifications and building codes—not shortcuts. Your windows will be flashed correctly, sealed properly, and built to last decades without water damage.</p>
+                </div>
+
+                <div class="why-card fade-in-up" data-delay="200">
+                    <div class="why-number">3</div>
+                    <h3>Real Warranties That Matter</h3>
+                    <p>Lifetime warranties on frames and hardware. 20-year warranties on glass. And because we install everything to spec, those warranties actually hold up when you need them.</p>
+                </div>
+
+                <div class="why-card fade-in-up" data-delay="300">
+                    <div class="why-number">4</div>
+                    <h3>US-Made Pella Products</h3>
+                    <p>We're Pella certified contractors. North American glass, US-manufactured products. Quality materials installed by someone who actually knows how to use them.</p>
+                </div>
+
+                <div class="why-card fade-in-up" data-delay="400">
+                    <div class="why-number">5</div>
+                    <h3>Lead Paint Certified</h3>
+                    <p>I'm one of only four EPA-certified lead paint contractors in Idaho. Working on a pre-1940s home? I handle it safely and legally—protecting you and your family.</p>
+                </div>
+
+                <div class="why-card fade-in-up" data-delay="500">
+                    <div class="why-number">6</div>
+                    <h3>Idaho Roots, Community Focused</h3>
+                    <p>4th generation Idaho native. This is my home, my community, where my kids are growing up. When I work on your house, I'm working on my neighbor's house.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section section-gray">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2 class="section-title">What Your Neighbors Are Saying</h2>
+                <p class="section-subtitle">Real homeowners, real transformations</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in-up" data-delay="0">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The glass was the finishing touch to our master bath remodel. It came out so clean and perfect. Cole did an amazing job with the final detail. Great quality and informative of upkeep. Very satisfying to see it done."</p>
+                    <div class="testimonial-author">
+                        <strong>Jason Yingling</strong>
+                        <span>Bathroom Remodel</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in-up" data-delay="100">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Cole provides friendly, reliable service and consistently delivers quality work. If any issues come up, he doesn't hesitate to come right over and take a look. He's a man of integrity, and I would confidently recommend him to anyone."</p>
+                    <div class="testimonial-author">
+                        <strong>Eileen Schnerr</strong>
+                        <span>Repeat Customer</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in-up" data-delay="200">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Cole has great attention to detail, keeps the worksite clean and is always punctual. He's done two homes for me in the last year. The most recent job was a delicate 100+ year old lead window removal and replacement. He took extra time and effort to preserve the old window."</p>
+                    <div class="testimonial-author">
+                        <strong>Stephanie Perkins</strong>
+                        <span>Historic Home Restoration</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in-up" data-delay="300">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Cole helped us plan a sliding glass door to replace a dark exterior door. A living room transformed with light. Cole is great to work with, conscientious, meticulous and a skilled craftsman. We can't recommend him enough."</p>
+                    <div class="testimonial-author">
+                        <strong>Katherine Jones</strong>
+                        <span>Patio Door Installation</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in-up" data-delay="400">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"We had 2 windows needing immediate replacement. The windows came in super fast, were installed within a couple days. I was very pleased with all the work & will definitely be keeping in touch for my future window project."</p>
+                    <div class="testimonial-author">
+                        <strong>NM Roorda</strong>
+                        <span>Window Replacement</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in-up" data-delay="500">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"We had 5 windows replaced. Cole did an excellent job. He is very organized and neat. He cleaned up after the job was complete. He was very knowledgeable and answered all our questions. We highly recommend him!"</p>
+                    <div class="testimonial-author">
+                        <strong>Chuck Jones</strong>
+                        <span>Multi-Window Replacement</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center section-cta">
+                <a href="https://www.google.com/search?q=cw+custom+works+glass+%26+door" target="_blank" class="btn btn-secondary">Read All 16 Five-Star Reviews</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter -->
+    <section class="stats section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card fade-in-up" data-delay="0">
+                    <div class="stat-number" data-target="70">0</div>
+                    <div class="stat-label">Years of Combined<br>Family Expertise</div>
+                </div>
+
+                <div class="stat-card fade-in-up" data-delay="100">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Hour Emergency<br>Service Available</div>
+                </div>
+
+                <div class="stat-card fade-in-up" data-delay="200">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">% Customer<br>Satisfaction</div>
+                </div>
+
+                <div class="stat-card fade-in-up" data-delay="300">
+                    <div class="stat-number">
+                        <span data-target="5">0</span>.<span data-target="0">0</span>
+                    </div>
+                    <div class="stat-label">Star Average<br>Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section">
+        <div class="container">
+            <div class="cta-card fade-in-up">
+                <h2>Ready to Get Your Windows Done Right?</h2>
+                <p>Let's talk about your project. I'll answer your questions, explain your options, and give you an honest assessment of what your home needs.</p>
+                <p class="cta-subtext">No pressure. No gimmicks. Just straight talk from someone who's been doing this for 26 years.</p>
+
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg plausible-event-name=CTA+Get+Quote">Get Your Free Quote</a>
+                    <a href="tel:+12089497019" class="btn btn-white btn-lg plausible-event-name=CTA+Call">
+                        <span class="phone-icon">📞</span>
+                        Call (208) 949-7019
+                    </a>
+                </div>
+
+                <div class="cta-trust">
+                    <span>✓ Free estimates</span>
+                    <span>✓ Same-day service available</span>
+                    <span>✓ Lifetime warranties</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/cw-custom-works-logo-white.png" alt="CW Custom Works Logo" class="footer-logo" width="160" height="53">
+                    <p>Expert window, door, and glass installation serving Boise and surrounding areas. Family owned, faith driven, community focused.</p>
+                    <div class="footer-certifications">
+                        <span class="cert-badge">Pella Certified</span>
+                        <span class="cert-badge">Lead Paint Certified</span>
+                        <span class="cert-badge">3rd Gen Glazier</span>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#glass-replacement">Glass Replacement</a></li>
+                        <li><a href="services.html#window-replacement">Window Replacement</a></li>
+                        <li><a href="services.html#shower-doors">Custom Shower Doors</a></li>
+                        <li><a href="services.html#doors">Patio & Storm Doors</a></li>
+                        <li><a href="services.html#emergency">Emergency Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Cole</a></li>
+                        <li><a href="contact.html">Get a Quote</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <p><strong>Phone:</strong><br>
+                    <a href="tel:+12089497019" class="plausible-event-name=Footer+Call">(208) 949-7019</a></p>
+                    <p><strong>Email:</strong><br>
+                    <a href="mailto:colew@cwcustomworks.com" class="plausible-event-name=Footer+Email">colew@cwcustomworks.com</a></p>
+                    <p><strong>Service Area:</strong><br>
+                    Boise, Meridian, Eagle, Nampa,<br>Caldwell, Idaho City & surrounding areas</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 CW Custom Works Glass & Door LLC. All rights reserved.</p>
+                <p class="footer-tagline">Serving Idaho with excellence, integrity, and faith.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# robots.txt for cwcustomworks.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.cwcustomworks.com/sitemap.xml
+
+# Block access to admin/config files (if any)
+Disallow: /config/
+Disallow: /.git/
