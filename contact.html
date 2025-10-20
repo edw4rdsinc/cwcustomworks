@@ -136,7 +136,13 @@
                     <p>Tell me about your project and I'll provide an honest assessment of what you need. No pressure, no obligation—just straight talk from someone who's been doing this for 26 years.</p>
                 </div>
 
-                <form class="quote-form fade-in-up" data-validate action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <form class="quote-form fade-in-up" data-validate action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key - Get yours at https://web3forms.com -->
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                    <input type="hidden" name="subject" value="New Quote Request - CW Custom Works">
+                    <input type="hidden" name="from_name" value="CW Custom Works Website">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                     <div class="form-grid">
                         <div class="form-group">
                             <label for="name">Your Name *</label>
@@ -283,6 +289,20 @@
                 </div>
 
                 <p class="service-note">Don't see your city? Give me a call anyway at <a href="tel:+12089497019">(208) 949-7019</a> — I may still be able to help!</p>
+
+                <!-- Google Maps Embed -->
+                <div class="map-container fade-in-up" style="margin-top: 3rem;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186506.85766568734!2d-116.36708799999999!3d43.6150186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef172e947b49d%3A0x9a5b989b36679d9b!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1737341234567!5m2!1sen!2sus"
+                        width="100%"
+                        height="450"
+                        style="border:0; border-radius: 8px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="CW Custom Works Service Area - Boise, Idaho">
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>

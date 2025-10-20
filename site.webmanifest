@@ -1,0 +1,17 @@
+{
+  "name": "CW Custom Works Glass & Door",
+  "short_name": "CW Custom Works",
+  "description": "Expert window, door, and glass installation in Boise, Idaho",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2962ff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
