@@ -51,7 +51,7 @@ Professional static website for CW Custom Works Glass & Door - Expert window, do
 Set this in your Vercel project settings:
 
 ```
-RESEND_API_KEY=re_JgqiiJdh_5SBPNDVZEmK5acfWdp2kLm8M
+
 ```
 
 *(You already have this configured from your other projects!)*
