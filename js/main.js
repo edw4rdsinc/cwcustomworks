@@ -106,22 +106,26 @@
     const statNumbers = document.querySelectorAll('.stat-number [data-target], .stat-number[data-target]');
     let hasAnimated = false;
 
-    const statsObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !hasAnimated) {
-                hasAnimated = true;
-                animateStats();
-            }
-        });
-    }, { threshold: 0.5 });
+    const statsSection = document.querySelector('.stats');
 
-    if (statNumbers.length > 0) {
-        statsObserver.observe(document.querySelector('.stats'));
+    if (statsSection && statNumbers.length > 0) {
+        const statsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !hasAnimated) {
+                    hasAnimated = true;
+                    animateStats();
+                }
+            });
+        }, { threshold: 0.3 });
+
+        statsObserver.observe(statsSection);
     }
 
     function animateStats() {
         statNumbers.forEach(stat => {
             const target = parseInt(stat.getAttribute('data-target'));
+            if (isNaN(target)) return;
+
             const duration = 2000;
             const increment = target / (duration / 16); // 60fps
             let current = 0;
